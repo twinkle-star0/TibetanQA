@@ -36,31 +36,31 @@
  *  Supports:
  *
  *      Youtube
- *          http://www.youtube.com/watch?v=opj24KnzrWo
- *          http://www.youtube.com/embed/opj24KnzrWo
- *          http://youtu.be/opj24KnzrWo
- *			http://www.youtube-nocookie.com/embed/opj24KnzrWo
+ *          //www.youtube.com/watch?v=opj24KnzrWo
+ *          //www.youtube.com/embed/opj24KnzrWo
+ *          //youtu.be/opj24KnzrWo
+ *			//www.youtube-nocookie.com/embed/opj24KnzrWo
  *      Vimeo
- *          http://vimeo.com/40648169
- *          http://vimeo.com/channels/staffpicks/38843628
- *          http://vimeo.com/groups/surrealism/videos/36516384
- *          http://player.vimeo.com/video/45074303
+ *          //vimeo.com/40648169
+ *          //vimeo.com/channels/staffpicks/38843628
+ *          //vimeo.com/groups/surrealism/videos/36516384
+ *          //player.vimeo.com/video/45074303
  *      Metacafe
- *          http://www.metacafe.com/watch/7635964/dr_seuss_the_lorax_movie_trailer/
- *          http://www.metacafe.com/watch/7635964/
+ *          //www.metacafe.com/watch/7635964/dr_seuss_the_lorax_movie_trailer/
+ *          //www.metacafe.com/watch/7635964/
  *      Dailymotion
- *          http://www.dailymotion.com/video/xoytqh_dr-seuss-the-lorax-premiere_people
+ *          //www.dailymotion.com/video/xoytqh_dr-seuss-the-lorax-premiere_people
  *      Twitvid
- *          http://twitvid.com/QY7MD
+ *          //twitvid.com/QY7MD
  *      Twitpic
- *          http://twitpic.com/7p93st
+ *          //twitpic.com/7p93st
  *      Instagram
- *          http://instagr.am/p/IejkuUGxQn/
- *          http://instagram.com/p/IejkuUGxQn/
+ *          //instagr.am/p/IejkuUGxQn/
+ *          //instagram.com/p/IejkuUGxQn/
  *      Google maps
- *          http://maps.google.com/maps?q=Eiffel+Tower,+Avenue+Gustave+Eiffel,+Paris,+France&t=h&z=17
- *          http://maps.google.com/?ll=48.857995,2.294297&spn=0.007666,0.021136&t=m&z=16
- *          http://maps.google.com/?ll=48.859463,2.292626&spn=0.000965,0.002642&t=m&z=19&layer=c&cbll=48.859524,2.292532&panoid=YJ0lq28OOy3VT2IqIuVY0g&cbp=12,151.58,,0,-15.56
+ *          //maps.google.com/maps?q=Eiffel+Tower,+Avenue+Gustave+Eiffel,+Paris,+France&t=h&z=17
+ *          //maps.google.com/?ll=48.857995,2.294297&spn=0.007666,0.021136&t=m&z=16
+ *          //maps.google.com/?ll=48.859463,2.292626&spn=0.000965,0.002642&t=m&z=19&layer=c&cbll=48.859524,2.292532&panoid=YJ0lq28OOy3VT2IqIuVY0g&cbp=12,151.58,,0,-15.56
  */
 (function ($) {
 	"use strict";

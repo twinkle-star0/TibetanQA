@@ -1,6 +1,6 @@
 /*!
  * cellsByRows layout mode for Isotope
- * http://isotope.metafizzy.co
+ * //isotope.metafizzy.co
  */
 
 ( function( window ) {
