@@ -14,6 +14,184 @@
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<style>
+		#main{
+			padding: 10px 0 76px;
+		}
+		.box_timeline{
+			width: 40%;
+		}
+		.box_timeline p{
+			margin: 0 20px 0 20px;
+		}
+		.box_timeline ul li{
+			background: #ffffff 0 76px;
+			float:left;
+			width: 100%;
+			height: auto;
+			margin: 0 0 0 0px;
+		}
+		.progress{
+			overflow: hidden;
+			width: 100%;
+			/* margin: 20px 0 3px 0; */
+			position: relative;
+			min-width: 300px;
+		}
+		.progress li{
+			/* overflow: hidden;
+			width: 100%;
+			height: auto;
+			line-height: 43px;
+			background: #46484c;
+			border-radius: 5px;
+			behavior: url(css/PIE.htc);
+			margin: 0 0 27px; */
+
+			background: #ffffff 0 76px;
+			float:left;
+			width: 100%;
+			height: auto;
+			margin: 0 0 0 0px;
+			border-radius: 0px;
+		}
+		.progress li h3{
+			font-size: 30px;
+		}
+		.progress li span{
+			background: #6e54d9;
+
+			/*text-transform:uppercase;*/
+			display: block;
+			/*font-family: 'novecentosanswide';*/
+			font-weight: normal;
+			font-size: 28px;
+			color: #ffffff;
+			text-align: center;
+			padding: 0 0 0 20px;
+		}
+		.progress li span.photoshop{
+			width: 100%;
+			border-radius: 20px;
+			position: relative;
+		}
+		.progress li span.photoshop a{
+			text-align: center;
+		}
+		.progress li div{
+			/* width: 300px; */
+			height: 40px;
+			margin: 10px auto;
+			padding: 0 10% 0 10%;
+			vertical-align: middle;
+		}
+		.progress li span.illustrator{width: 70%;}
+		.progress li span.indesign{width: 40%;}
+		.progress li span.flash{width: 80%;}
+		.progress li span.html{width: 75%;}
+		.progress li span.wordpress{width: 85%;}
+		.progress li span.jquery{width: 70%;}
+		.progress li span.seo{width: 40%;}
+		.table_display{
+			width: 54%;
+		}
+		.table_display ul{
+			margin: 20px 0 3px 0;
+		}
+		.table_display p{
+			margin: 0 20px 0 20px;
+		}
+		#table_wrap > table {
+			width: 98%;
+            font-size: 16px;
+            text-align: center;
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 2px #000;
+			color: black;
+			table-layout: fixed;
+        }
+
+        table thead tr,table tbody tr {
+            height: 50px;
+            line-height: 50px;
+            /*background-color: pink;*/
+        }
+		table thead tr th{
+			font-size: 20px;
+			line-height: 26px;
+			vertical-align: middle;
+		}
+		table tbody tr td {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+        table tr th:first-child,table tr td:first-child {/*设置table左边边框*/
+            /* border-left: 2px solid #eaeaea; */
+        }
+        table tr th:last-child,table tr td:last-child {/*设置table右边边框*/
+            /* border-right: 2px solid #eaeaea; */
+        }
+		/* table tr td:first-child{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: normal;
+		} */
+        table tr td:first-child,
+        table tr td:nth-child(2),
+        table tr td:nth-child(3),
+		table tr td:nth-child(4),
+        table tr td:last-child{/*设置table表格每列底部边框*/
+            border-bottom: 2px solid #eaeaea;
+        }
+        /*table tr:last-child td:first-child,
+        table tr:last-child td:nth-child(2),
+        table tr:last-child td:nth-child(3),
+        table tr:last-child td:last-child{/!*设置table表格最后一列底部边框*!/
+            border-bottom: 2px solid #000;
+        }*/
+        table tr th {
+            background: #eaeaea;
+        }
+        /* table tr:first-child th:first-child {
+            border-top-left-radius: 12px;
+        }
+
+        table tr:first-child th:last-child {
+            border-top-right-radius: 12px;
+        }
+        table tr:last-child td:first-child {
+            border-bottom-left-radius: 12px;
+        }
+
+        table tr:last-child td:last-child {
+            border-bottom-right-radius: 12px;
+        } */
+		#data_table tr td p{
+			font-size: 1.1em;
+			font-weight: 400;
+			margin: 0px;
+			padding: 0px;
+			display: block;
+		}
+		#data_table tr td span{
+			font-weight: normal;
+			background-color: #777;
+			display: inline;
+			padding: .2em .6em .3em;
+    		font-size: 75%;
+    		font-weight: 700;
+    		line-height: 1;
+    		color: #fff;
+    		text-align: center;
+    		white-space: nowrap;
+    		vertical-align: baseline;
+    		border-radius: .25em;
+		}
+	</style>
 </head>
 <body>
 	<div id="wrapper" class="inner">
@@ -33,24 +211,107 @@
 		</div>
 		<div class="wrapper-holder grey">
 			<section id="main">
-				<div class="skills_holder">
-					<div class="column">
-						<h2>information:</h2>
-						<p>The paper and the dataset</p>
+				<div class="box_timeline_holder">
+					<div class="box_timeline">
+				<!-- <div class="skills_holder">
+					<div class="column"> -->
+						<!-- <h2>information:</h2>
+						<p>The paper and the dataset</p> -->
 						<ul class="progress">
 							<li>
-								<span class="photoshop">Training Set
-									<a href="dev.xlsx" style="color: white" download="train">download</a>
-								</span></li>
-							<li><span class="photoshop">Dev Set
-								<a href="dev.xlsx" style="color: white" download="dev">download</a>
-							</span></li>
-							<li><span class="photoshop">paper
-								<a href="dev.xlsx" style="color: white" download="paper">download</a>
-							</span></li>
+								<h3>information</h3>
+								<p>The paper and the dataset</p>
+								<div>
+									<span class="photoshop">Training Set
+										<a href="dev.xlsx" style="color: white" download="train">download</a>
+									</span>
+								</div>
+								
+								<div>
+									<span class="photoshop">Dev Set
+										<a href="dev.xlsx" style="color: white" download="dev">download</a>
+									</span>
+								</div>
+								
+								<div>
+									<span class="photoshop">paper
+										<a href="dev.xlsx" style="color: white" download="paper">download</a>
+									</span>
+								</div>
+								
+
+								
+							</li>
 						</ul>
 					</div>
-					<div class="column column-add">
+					<div class="table_display">
+						<ul>
+							<li id="example">
+								<h3>Models</h3>
+								<p>evaluate your models</p>
+								<div id='table_wrap'>
+									<table class="table" cellspacing="0" cellpadding="0">
+										<thead class="table_head">
+											<tr>
+												<th>Rank</th>
+												<th>Model</th>
+												<th>EM</th>
+												<th>F1</th>
+											</tr>
+										</thead>
+										<tbody rows id='data_table'>
+											<tr>
+												<td>
+													<p>1</p>
+													<span>Feb 20,2021</span>
+												</td>
+												<td>
+													model1
+												</td>
+												<td>
+													90.135
+												</td>
+												<td>
+													93.261
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p>2</p>
+													<span>Dec 14,2020</span>
+												</td>
+												<td>
+													model2
+												</td>
+												<td>
+													98.947
+												</td>
+												<td>
+													91.481
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p>3</p>
+													<span>Jun 05,2021</span>
+												</td>
+												<td>
+													model3
+												</td>
+												<td>
+													88.625
+												</td>
+												<td>
+													90.314
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>	
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="column column-add">
 						<h2>Models:</h2>
 						<p>evaluate your models.</p>
 						<ul class="progress">
@@ -61,7 +322,7 @@
 							<li><span class="photoshop">model3</span></li>
 
 						</ul>
-					</div>
+					</div> -->
 				</div>
 				<!--ul class="plagin_list">
 					<li class="li_1"><a href="#">ps</a></li>
