@@ -223,19 +223,20 @@
 								<p>The paper and the dataset</p>
 								<div>
 									<span class="photoshop">Training Set
-										<a href="dev.xlsx" style="color: white" download="train">download</a>
+										<!-- <a href="dev.xlsx" style="color: white" download="train">download</a> -->
+										<a onclick="myFunction()" style="color: white" download="train">download</a>
 									</span>
 								</div>
 								
 								<div>
 									<span class="photoshop">Dev Set
-										<a href="dev.xlsx" style="color: white" download="dev">download</a>
+										<a onclick="myFunction()" style="color: white" download="dev">download</a>
 									</span>
 								</div>
 								
 								<div>
 									<span class="photoshop">paper
-										<a href="dev.xlsx" style="color: white" download="paper">download</a>
+										<a onclick="myFunction()" style="color: white" download="paper">download</a>
 									</span>
 								</div>
 								
@@ -381,5 +382,16 @@
 	<script src="js/cells-by-row.js"></script>
 	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		function myFunction(){
+                var x;
+                var r=confirm("The data is being sorted out and will be released later!");
+                // if (r==true){
+                //     x="你按下了\"确定\"按钮!";
+                // }else{
+                //     x="你按下了\"取消\"按钮!";
+                // }document.getElementById("demo").innerHTML=x;
+            }
+	</script>
 </body>
 </html>
